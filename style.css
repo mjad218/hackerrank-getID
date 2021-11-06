@@ -1,0 +1,87 @@
+body {
+    margin: 0 ; 
+    padding: 0; 
+    font-family: 'Source Code Pro', monospace;
+}
+* {
+    box-sizing: border-box;
+}
+header .container {
+    height: 70px;
+    background: #fff;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+}
+
+.row {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header .container .wrapper {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.container {
+    padding: 0 25px;
+}
+
+footer .container {
+    background: #f9f9f9;
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+
+main .container .wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh - 70px - 70px);
+    align-items: center;
+}
+@media only screen and (max-width: 900px) {
+    main .container .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: calc(100vh - 70px - 70px);
+        align-items: center;
+        text-align: center;
+    }
+    
+}
+
+  
+.app {
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    height: 360px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+input#username {
+    border: 1px solid #eee;
+    height: 50px;
+    display: flex;
+    padding-inline-start: 15px;
+    border-radius: 10px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+input[type="submit"] {
+    border: 1px solid #eee;
+    height: 50px;
+    display: flex;
+    border-radius: 10px;
+    background-color: #2ec866;
+    width: 100%;
+    color: #fff;
+    margin: 20px 0;
+    font-weight: bold;
+    justify-content: center;
+}
